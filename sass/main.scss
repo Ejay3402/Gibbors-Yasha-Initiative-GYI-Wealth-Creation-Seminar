@@ -1,0 +1,217 @@
+/* font roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+}
+
+html {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+button {
+    font: inherit;
+}
+
+
+/* header part */
+
+header {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: auto;
+    padding: 10px 20px;
+    clear: both;
+    margin-bottom: 50px;
+
+    nav {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            width: 60px;
+            height: auto;
+        }
+            li {
+                list-style: none;
+                a {
+                    color: #000;
+                    transition: .500s ease-in-out;
+                }
+                a:hover {
+                    color: red;
+                }
+            }
+        
+    }
+}
+
+/* main part */
+
+main {
+    margin-top: 90px;
+    padding: 10px 22px;
+    h1 {
+        text-align: center;
+        font-size: 2.6rem;
+        margin-bottom: 15px;
+    }
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 35px;
+        color: rgb(141, 21, 21);
+    }
+
+    h3 {
+        margin: 10px 0;
+    }
+
+    p  {
+        margin: 15px 0;
+
+    }
+
+    .core-values {
+        ol {
+          margin-left: 20px;
+          padding-left: 0;
+          li {
+            margin-bottom: 5px;
+            list-style-position: inside;
+          }
+        }
+      }
+
+    .red {
+        color: rgb(125, 14, 14);   
+    }
+
+    .for-more {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        img {
+            width: 100%;
+            max-width: 800px;
+        }
+    }
+
+
+
+    .form {
+        margin: 50px 0;
+        width: 100%;
+        background: rgb(232, 222, 222);
+        padding: 12px;
+        border-radius: 8px;
+        h2 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+            color: rgb(125, 14, 14);
+        }
+        form {
+            input {
+                width: 100%;
+                margin: 10px 0;
+                padding: 10px ;
+                font-weight: 700;
+                font-size: 1.3rem;
+                border-radius: 10px;
+                transition: .500s ease-in-out;
+            }
+            input:focus {
+                border: 2px solid rgb(125, 14, 14);
+            }
+            button {
+                padding: 12px 38px;
+                color: #fff;
+                font-family: sans-serif;
+                font-weight: 700;
+                font-size: 1.2rem;
+                background: blue;
+                border: none;
+                border-radius: 11px;
+                margin-top: 30px;
+                cursor: pointer;
+                transition: .550s ease-in;
+            }
+            button:hover,
+            button:focus {
+                background: rgb(141, 21, 21);
+            }
+        }
+    }
+
+}
+
+/* footer part */
+
+footer {
+    width: 100%;
+    margin-top: 20px;
+    background: #131413;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    text-align: center;
+    color: #fff;
+    padding: 20px 10px;
+
+    h2 {
+        color: #f1f1f1;
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        color: #f1f1f1;
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+    li {
+        margin-bottom: 10px;
+        letter-spacing: .1rem;
+    }
+
+    .fb {
+        margin: 15px 0;
+        padding: 12px 15px;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: #fff;
+        transition: .666s ease-in-out;
+        border: 1.2px solid #f1f1f1;
+    }
+    .fb:hover {
+        color: blue;
+        background: #f1f1f1;
+    }
+
+}
+
+/* small part  */
+
+@media (max-width: 512px) {
+    main {
+        padding: 10px 8px;
+    }
+}
